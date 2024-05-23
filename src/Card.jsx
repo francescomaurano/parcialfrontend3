@@ -1,11 +1,12 @@
 // src/Card.jsx
 import React from 'react';
 
-function Card() {
+function Card({name, animal}) {
   return (
     <div className="card">
-      <h2>Estudiante</h2>
-      <p>Detalles del estudiante aquí</p>
+      <h2>Persona</h2>
+      <p>Nombre: {name}</p>
+      <p>Animal Favorito: {animal}</p>
     </div>
   );
 }
